@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	.div {
+		background-color: yellow; 
+		width: 30%;  /* px : 고정된 크기  % : 브라우저의 크기에 따른 가변크기*/
+		height: 100px;
+		border: 15px solid navy; /* 직접적으로 색상을 주어도 되지만 RGB색상표를 사용해도 된다 */
+		padding: 50px 0 0 50px;
+		margin: 50px 0 0 50px;
+	}
+	.div2 {
+		background-color: yellow;
+		width: 30%;  
+		height: 100px;
+		border: 15px solid rgba(0,0,0,0.4); /* 뒤의 소수점은 색의 농도를 의미한다 */
+		box-shadow : 0 0 10px 30px rgba(54,98,351)  /* 박스 그림자 (오른쪽크기 아래크기 번짐정도) */
+	}
+	.title{
+		text-shadow: 10px 10px 5px black /* 글자 그림자 (오른쪽크기 아래크기 번짐정도 색) */
+	}
+	.img {
+		width: 100px; height: 100px;
+		box-shadow: 5px 5px 10px black;	
+	}
+	* {margin: 0;} /* 기본적으로 모든 태그들엔 margin이 있는데 이를 없애주고 작업한다 */
+	
+</style>
+</head>
+<body>
+	<h1 style="background-color: red;">aaaa</h1>
+<hr>
+	<img class="img" src="quizimg.jpg">
+<hr>
+	<h1 class="title">제목이 들어갑니다!</h1>
+<hr>
+	<div class="div2">
+		박스모델
+	</div>
+<hr>
+	<div class="div">
+		박스모델
+	</div>
+
+
+</body>
+</html>

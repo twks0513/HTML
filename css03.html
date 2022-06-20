@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	nav ul{list-style: none; display: flex; justify-content: flex-end;}
+	nav ul li{ 		  /* 위 오 아 왼 (1개만 넣을 시 전체 2개넣을시 (위아래) (왼오) 이다)*/
+				padding: 10px; /*태그내에서 방향으로 밀어낸다 */
+				margin: 0 3px; /*태그바깥에서 방향으로 밀어낸다 태그자체는 변하지 않는다*/
+				}
+	nav ul li a{text-decoration: none; color: white;}
+	nav ul li a:hover {
+		color: orange;
+		padding-bottom: 3px;
+		border-bottom: 3px dotted orange;
+		transition :all 0.25s;
+	}
+	div{background-color: blue; height: 100px;
+		overflow: hidden;
+	}
+	div div{ background-color: red; height: 200px; width: 200px; }
+</style>
+
+</head>
+<body>
+	<div>
+		hello
+		<div>
+			css
+		</div>	
+	</div>
+
+	<hr>
+	<nav style="background-color: black;">
+		<ul>
+			<li><a href="#">HOME</a></li>
+			<li><a href="#">BOARD</a></li>
+			<li><a href="#">MEMBER_SHIP</a></li>
+		
+		</ul>
+	
+	
+	</nav>
+
+
+</body>
+</html>
