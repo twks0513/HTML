@@ -1,8 +1,10 @@
 *{margin: 0;}
-.warp{background-color: gray; margin: auto; width: 70%; height: 500px;}
+.warp{background-color: gray; margin: auto; width: 70%; height: auto;}
 .header{position: fixed; top:0; width: 70%; z-index: 1111; background-image: url("quizimg.jpg"); text-align: center;}
 div h1{font-size: 70pt; text-align: center; }
-nav ul{display: flex; align-items:center; list-style:none; justify-content:center; background-color: black; color: white; height: 40px;}
+.spanh1::before{content: "HomePage"; font-size: 70pt;}
+.spanh1:hover::before{content: "HOMEPAGE"; font-size: 70pt;}
+nav ul{display: flex;text-align:center; list-style:none; justify-content:center; padding: 0; background-color: black; color: white; height: auto;}
 nav ul li{ padding: 10px; margin: 0 6px;}
 nav ul li a{text-align:center; border:1px solid white; border-radius: 5px; padding: 1px;
 	text-decoration: none; color: white;
@@ -23,9 +25,9 @@ div span a{font-size: 15pt; display: flex; text-align: center;}
 .container a:visited{color:black; text-decoration: none; text-align: center;}
 #clock{color:black; font-size: 25px;}
 #apm{color:black; font-size: 17px;}
-.potal{text-align:center; display:flex;  position: relative;}
+.potal{display:flex; flex-flow: column;}
 div img{text-align:center; border:1px solid black; border-radius: 5px; width: 150px; height: 50px;}
-#a1{display : block; margin : auto;}
-#a2{display : block; margin : auto;}
-#a3{display : block; margin : auto;}
-
+#a1{display : block; margin : 0 20px; padding: 0 auto;}
+#a2{display : block; margin : 0 20px;}
+#a3{display : block; margin : 0 20px;}
+.footer{text-align: center;}
